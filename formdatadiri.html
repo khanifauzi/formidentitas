@@ -1,0 +1,88 @@
+<!--
+  Nama      : Khanif Fauzi Pambudi
+  NIM       : 24010314140094
+  Deskripsi : Post Test 02
+  Tanggal   : 15 September 2016
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Post Test</title>
+    <style>
+      .wpadding td,.wpadding th{
+        padding: 10px;
+      }
+      .wpadding{
+        margin-top: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form method='POST'>
+      <table border='0'>
+        <tbody>
+          <tr>
+            <td>Nama</td>
+            <td>: <input name='nama' pattern='[a-zA-Z ]{2,}'/></td>
+          </tr>
+          <tr>
+            <td>Nomer HP</td>
+            <td>: <input name='hp' pattern='[0-9]{2,12}'/></td>
+          </tr>
+          <tr>
+            <td>Twitter</td>
+            <td>: <input name='twitter' required pattern='@+[A-Za-z0-9_]{1,15}$'/></td>
+          </tr>
+          <tr>
+            <td>Usia</td>
+            <td>: <input name='usia' required pattern='[0-9]{0,100}'/></td>
+          </tr>
+          <tr>
+            <td>Jenis Kelamin</td>
+            <td>:
+              <input type='radio' checked name='sex' value='1' id='pria'> <label for='pria'>Pria</label>
+              <input type='radio' name='sex' value='2' id='wanita'> <label for='wanita'>Wanita</label>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><button type='submit' name='submit'>Submit</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+
+    <table border='1' class='wpadding'>
+      <thead>
+        <tr>
+          <th rowspan="2">No</th>
+          <th rowspan="2">Nama</th>
+          <th colspan="2">Data Ortu</th>
+          <th rowspan="2">Jurusan</th>
+        </tr>
+        <tr>
+          <th>Nama Ayah</th>
+          <th>Nama Ibu</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>A</td>
+          <td>Bapak</td>
+          <td>Ibu</td>
+          <td rowspan="2">Ilmu Komputer/Informatika</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>B</td>
+          <td>Rama</td>
+          <td>Biyung</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
